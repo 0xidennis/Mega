@@ -98,7 +98,7 @@ const LoanService = () => {
 
     {/* Apply Button */}
     <div className="text-center mt-8">
-      <button className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-2 rounded-md">Apply for Loan Now</button>
+      <button className="bg-[#3BB3C3] hover:bg-cyan-600 text-white px-8 py-2 rounded-md">Apply for Loan Now</button>
     </div>
   </div>
   )

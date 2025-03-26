@@ -3,6 +3,7 @@ import Header from '../Static/Header'
 import Hero from '../Hero'
 import CreditCardCarousel from '../Component/CreditCardCarousel'
 import LoanService from '../Component/LoanService'
+import About from '../Component/About'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         <Hero/>
         <CreditCardCarousel/>
         <LoanService/>
+        <About/>
     </div>
   )
 }

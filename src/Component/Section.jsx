@@ -3,9 +3,9 @@ import classic from '../assets/image/classic.png'
 
 const Section = ({ title, content }) => {
   return (
-    <div className=" p-6 rounded-lg  relative lg:ml-60 w-full">
-    <h3 className="font-semibold text-lg mb-2 shadow-lg bg-[#FFFFFF] py-2 px-2 text-center z-1">{title}</h3>
-    <p className="text-gray-700 text-md shadow-md bg-[#FFFFFF] p-2">{content}</p>
+    <div className=" p-6   relative lg:ml-60 w-full">
+    <h3 className="font-semibold text-lg mb-2 shadow-lg bg-[#FFFFFF] py-2 px-2 text-center z-0 rounded-full">{title}</h3>
+    <p className="text-gray-700 text-md shadow-md bg-[#FFFFFF] p-2 z-1 rounded-t-lg">{content}</p>
     <span className="absolute top-6 right-8 "> <img src={classic} alt="" width={30} /></span>
   </div>
   )

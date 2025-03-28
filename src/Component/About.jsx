@@ -3,7 +3,7 @@ import Section from './Section'
 
 const About = () => {
   return (
-    <div className="overflow-x-hidden flex flex-col items-center bg-gray-100 min-h-screen p-6 bg-[url('/mancoat.png')]  bg-left bg-contain bg-no-repeat">
+    <div className="overflow-x-hidden flex flex-col items-center bg-[#F2F2F2] min-h-screen p-6 bg-[url('/mancoat.png')]  bg-left bg-contain bg-no-repeat">
     <h2 className="text-2xl font-bold mb-6 lg:ml-45">About us</h2>
     <div className="flex flex-col md:flex-row items-center max-w-4xl  rounded-lg p-6">
       

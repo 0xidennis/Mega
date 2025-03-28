@@ -9,7 +9,7 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="relative w-full bg-white overflow-hidden  ">
+    <header className="relative w-full bg-white overflow-x-hidden  ">
 
     <div className="container mx-auto px-4 py-4 flex items-center justify-between">
       {/* Logo */}

@@ -6,7 +6,7 @@ import girl from "../assets/image/girl.png"
 
 const LoanService = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8 mt-60 items-center">
+    <div className="max-w-4xl mx-auto px-4 py-8 mt-60 items-center overflow-hidden">
     <h1 className="text-2xl font-bold text-center text-cyan-500 mb-8">LOAN SERVICES</h1>
 
     {/* Personal Loans */}
@@ -42,14 +42,14 @@ const LoanService = () => {
     </div>
 
     {/* Federal and States Employees Loans */}
-    <div className=" rounded-lg  mb-6 flex flex-col md:flex-row items-center w-210 -ml-46">
+    <div className=" rounded-lg  mb-6 flex flex-col md:flex-row items-center lg:w-210 lg:-ml-46 gap-4">
       <div className="md:w-1/4">
        
-        <img src={woman} alt=""height={5} className='h-52 ml-[145px] relative z-10 '/>
+        <img src={woman} alt=""height={5} className='h-52 lg:ml-[145px] relative z-10 '/>
       </div>
-      <div className="md:w-3/4 bg-[#F1F6FF] py-13 px-13 ">
-        <h2 className="text-lg font-bold mb-2 ml-12">Federal and States Employees Loans</h2>
-        <p className="text-sm text-gray-700 ml-12">
+      <div className="md:w-3/4 bg-[#F1F6FF] p-10  ">
+        <h2 className="text-lg font-bold mb-2 lg:ml-12">Federal and States Employees Loans</h2>
+        <p className="text-sm text-gray-700 lg:ml-12">
           MEGA CLASSIC business loan build the ladder for entrepreneur to climb with our low interest rate and
           flexible repayment plan loan design to suit entrepreneur
         </p>

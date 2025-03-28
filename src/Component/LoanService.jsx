@@ -45,7 +45,7 @@ const LoanService = () => {
     <div className=" rounded-lg  mb-6 flex flex-col md:flex-row items-center ">
       <div className="md:w-1/4">
        
-        <img src={woman} alt=""height={5} className='h-60'/>
+        <img src={woman} alt=""height={5} className='h-60 -mt-10 relative z-10 '/>
       </div>
       <div className="md:w-3/4 bg-[#F1F6FF] p-13 lg:mr-30">
         <h2 className="text-lg font-bold mb-2">Federal and States Employees Loans</h2>

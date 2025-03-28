@@ -83,7 +83,7 @@ const CreditCardCarousel = () => {
         </div>
 
         <button
-          className={`absolute top-1/2 -translate-y-1/2 lg:left-7 left-2    ${
+          className={`absolute top-1/2 -translate-y-1/2 lg:-left-7 -left-5    ${
             currentIndex === 0 ? "opacity-50 cursor-not-allowed" : "opacity-100"
           }`}
           onClick={handlePrev}
@@ -94,7 +94,7 @@ const CreditCardCarousel = () => {
         </button>
 
         <button
-          className={`absolute top-1/2 -translate-y-1/2 lg:right-7 right-2   ${
+          className={`absolute top-1/2 -translate-y-1/2 lg:-right-7 -right-5   ${
             currentIndex === maxIndex ? "opacity-50 cursor-not-allowed" : "opacity-100"
           }`}
           onClick={handleNext}

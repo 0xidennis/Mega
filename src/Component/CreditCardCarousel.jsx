@@ -1,7 +1,13 @@
 import React from 'react'
 import { useState, useRef, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import BenefitCard from './BenefitCard';
+import student from "../assets/image/3.png"
+import stud from "../assets/image/1.png"
+import stu from "../assets/image/2.png"
+import fine from "../assets/image/fine.png"
+import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+
 
 const CreditCardCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -12,25 +18,25 @@ const CreditCardCarousel = () => {
     {
       title: "Flexible Repayment Plan",
       color: "bg-[#3BB3C3]",
-      image: "",
+      image: student,
       alt: "",
     },
     {
       title: "Low Interest Rate on a Reducing Balance.",
       color: "bg-[#808080]",
-      image: "/placeholder.svg?height=300&width=300",
+      image: stud,
       alt: "",
     },
     {
       title: "No distance Barrier",
       color: "bg-[#85C226]",
-      image: "/placeholder.svg?height=300&width=300",
+      image: stu,
       alt: "",
     },
     {
       title: "No paper work required",
       color: "bg-[#2C73D9]",
-      image: "/placeholder.svg?height=300&width=300",
+      image: fine,
       alt: "",
     },
   ];
@@ -77,24 +83,24 @@ const CreditCardCarousel = () => {
         </div>
 
         <button
-          className={`absolute top-1/2 -translate-y-1/2 -left-4 bg-white shadow-md rounded-full p-2 z-10 ${
+          className={`absolute top-1/2 -translate-y-1/2 -left-7     ${
             currentIndex === 0 ? "opacity-50 cursor-not-allowed" : "opacity-100"
           }`}
           onClick={handlePrev}
           disabled={currentIndex === 0}
         >
-          <ChevronLeft className="h-6 w-6" />
+          <ArrowLeftIcon className="h-30 w-30 text-[#85C226] text-lg" />
           <span className="sr-only">Previous slide</span>
         </button>
 
         <button
-          className={`absolute top-1/2 -translate-y-1/2 -right-4 bg-white shadow-md rounded-full p-2 z-10 ${
+          className={`absolute top-1/2 -translate-y-1/2 -right-7    ${
             currentIndex === maxIndex ? "opacity-50 cursor-not-allowed" : "opacity-100"
           }`}
           onClick={handleNext}
           disabled={currentIndex === maxIndex}
         >
-          <ChevronRight className="h-6 w-6" />
+          <ArrowRightIcon className="h-6 w-6 text-[#85C226]" />
           <span className="sr-only">Next slide</span>
         </button>
       </div>

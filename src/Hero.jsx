@@ -9,13 +9,7 @@ const Hero = () => {
       {/* Left side - Circular image */}
       <div className="relative w-full md:w-1/2 aspect-square md:aspect-auto">
         <div className="relative w-full aspect-square rounded-full  ">
-          {/* <image
-            src={finac}
-            alt="Financial items including calculator, percentage symbol, and currency"
-            fill
-            className="object-cover"
-            priority
-          /> */}
+         
           <img src={finac} alt="" />
         </div>
       </div>

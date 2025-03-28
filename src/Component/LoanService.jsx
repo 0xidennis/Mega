@@ -10,18 +10,12 @@ const LoanService = () => {
     <h1 className="text-2xl font-bold text-center text-cyan-500 mb-8">LOAN SERVICES</h1>
 
     {/* Personal Loans */}
-    <div className="bg-slate-50 rounded-lg p-6 mb-6 flex flex-col md:flex-row items-center gap-4">
+    <div className=" rounded-lg  mb-6 flex flex-col md:flex-row items-center gap-4">
       <div className="md:w-1/6">
-        {/* <Image
-          src="/placeholder.svg?height=150&width=150"
-          alt="Person with glasses"
-          width={150}
-          height={150}
-          className="rounded-full"
-        /> */}
+       
         <img src={man} alt="" height={150}/>
       </div>
-      <div className="md:w-3/4">
+      <div className="md:w-3/4 bg-[#F1F6FF] p-6">
         <h2 className="text-lg font-bold mb-2">Personal Loans</h2>
         <p className="text-sm text-gray-700">
           We provide quick and accessible loans to individuals. Our personal loan makes it easy for your quick
@@ -33,18 +27,12 @@ const LoanService = () => {
     </div>
 
     {/* Small Business Loans */}
-    <div className="bg-slate-50 rounded-lg p-6 mb-6 flex flex-col md:flex-row-reverse items-center gap-4">
+    <div className=" rounded-lg  mb-6 flex flex-col md:flex-row-reverse items-center gap-4">
       <div className="md:w-1/4">
-        {/* <Image
-          src="/placeholder.svg?height=150&width=150"
-          alt="Woman with tablet"
-          width={150}
-          height={150}
-          className="rounded-full"
-        /> */}
+       
         <img src={lady} alt="" />
       </div>
-      <div className="md:w-3/4">
+      <div className="md:w-3/4 bg-[#F1F6FF] p-10">
         <h2 className="text-lg font-bold mb-2">Small Business Loans</h2>
         <p className="text-sm text-gray-700">
           MEGA CLASSIC business loan build the ladder for entrepreneur to climb with our low interest rate and
@@ -54,18 +42,12 @@ const LoanService = () => {
     </div>
 
     {/* Federal and States Employees Loans */}
-    <div className="bg-slate-50 rounded-lg p-6 mb-6 flex flex-col md:flex-row items-center gap-4">
+    <div className=" rounded-lg  mb-6 flex flex-col md:flex-row items-center ">
       <div className="md:w-1/4">
-        {/* <Image
-          src="/placeholder.svg?height=150&width=150"
-          alt="Woman in red"
-          width={150}
-          height={150}
-          className="rounded-full"
-        /> */}
-        <img src={woman} alt=""height={30}/>
+       
+        <img src={woman} alt=""height={5} className='h-60'/>
       </div>
-      <div className="md:w-3/4">
+      <div className="md:w-3/4 bg-[#F1F6FF] p-13 lg:mr-30">
         <h2 className="text-lg font-bold mb-2">Federal and States Employees Loans</h2>
         <p className="text-sm text-gray-700">
           MEGA CLASSIC business loan build the ladder for entrepreneur to climb with our low interest rate and
@@ -75,18 +57,12 @@ const LoanService = () => {
     </div>
 
     {/* Asset Financing */}
-    <div className="bg-slate-50 rounded-lg p-6 mb-6 flex flex-col md:flex-row-reverse items-center gap-4">
+    <div className=" rounded-lg mb-6 flex flex-col md:flex-row-reverse items-center gap-4">
       <div className="md:w-1/4">
-        {/* <Image
-          src="/placeholder.svg?height=150&width=150"
-          alt="Person in corner"
-          width={150}
-          height={150}
-          className="rounded-full"
-        /> */}
+       
         <img src={girl} alt="" />
       </div>
-      <div className="md:w-3/4">
+      <div className="md:w-3/4 bg-[#F1F6FF] p-10">
         <h2 className="text-lg font-bold mb-2">Asset Financing</h2>
         <p className="text-sm text-gray-700">
           Mega classic asset financing is tailored and ready to make customers own a period of time. We help you
@@ -98,7 +74,7 @@ const LoanService = () => {
 
     {/* Apply Button */}
     <div className="text-center mt-8">
-      <button className="bg-[#3BB3C3] hover:bg-cyan-600 text-white px-8 py-2 rounded-md">Apply for Loan Now</button>
+      <button className="bg-[#3BB3C3] hover:bg-cyan-600 text-white px-20 py-4 rounded-md shadow-lg item-center  justify-center">Apply for Loan Now</button>
     </div>
   </div>
   )

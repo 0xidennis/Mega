@@ -1,10 +1,12 @@
 import React from 'react'
 import Home from './Page/Home'
+import ApplicOne from './loanform/ApplicOne'
 
 const App = () => {
   return (
     <div>
-      <Home/>
+      {/* <Home/> */}
+      <ApplicOne/>
     </div>
   )
 }

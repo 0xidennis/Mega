@@ -4,6 +4,7 @@ import Hero from '../Hero'
 import CreditCardCarousel from '../Component/CreditCardCarousel'
 import LoanService from '../Component/LoanService'
 import About from '../Component/About'
+import Footer from '../Static/Footer'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <CreditCardCarousel/>
         <LoanService/>
         <About/>
+        <Footer/>
     </div>
   )
 }

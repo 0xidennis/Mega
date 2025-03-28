@@ -3,15 +3,11 @@ import Section from './Section'
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center bg-gray-100 min-h-screen p-6 bg-[url('/mancoat.png')] bg-cover bg-center bg-no-repeat">
-    <h2 className="text-2xl font-bold mb-6">About us</h2>
-    <div className="flex flex-col md:flex-row items-center max-w-4xl bg-white shadow-lg rounded-lg p-6">
-      <img
-        src="/businessman.png" // Replace with actual image path
-        alt="Businessman"
-        className="w-1/3 rounded-lg hidden md:block"
-      />
-      <div className="flex flex-col w-full md:w-2/3 space-y-4">
+    <div className="overflow-x-hidden flex flex-col items-center bg-gray-100 min-h-screen p-6 bg-[url('/mancoat.png')]  bg-left bg-contain bg-no-repeat">
+    <h2 className="text-2xl font-bold mb-6 lg:ml-45">About us</h2>
+    <div className="flex flex-col md:flex-row items-center max-w-4xl  rounded-lg p-6">
+      
+      <div className="flex flex-col w-full md:w-2/3 lg:space-y-1 ">
         <Section
           title="WHO WE ARE"
           content="MEGA CLASSIC WORLD is a company registered in Nigeria since 2007. Mega Classic is a growing financing organization with deep roots in financing. In MEGA CLASSIC WORLD, we are committed to meet our clients' needs in terms of satisfaction, accountability, and on-time delivery of our service."

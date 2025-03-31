@@ -1,5 +1,6 @@
 import React from 'react'
 import finac from './assets/image/finac.png'
+import {  Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -26,10 +27,11 @@ const Hero = () => {
           At mega classic we understand that <br />managing finances can be challenging. <br /> Mega classic credit is here for you
           with <br />a suitable and flexible financial solution <br />to help you achieve your goals.
         </p>
-
+        <Link to="/get-started">
         <button className="w-full md:w-auto bg-[#3BB3C3] hover:bg-teal-600 text-white py-2 px-30 rounded-md text-lg">
           Apply for loan Now
         </button>
+        </Link>
       </div>
     </div>
     <div className="absolute bottom-0 left-0 w-70 h-120 bg-gradient-to-br from-sky-500 to-sky-300 opacity-30 rounded-full blur-2xl pointer-events-none"></div>

@@ -5,16 +5,17 @@ import CreditCardCarousel from '../Component/CreditCardCarousel'
 import LoanService from '../Component/LoanService'
 import About from '../Component/About'
 import Footer from '../Static/Footer'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
     <div>
-        <Header/>
+        {/* <Header/> */}
         <Hero/>
         <CreditCardCarousel/>
         <LoanService/>
         <About/>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }

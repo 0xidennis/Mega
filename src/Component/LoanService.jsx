@@ -3,6 +3,7 @@ import man from "../assets/image/man.png"
 import lady from "../assets/image/lady.png"
 import woman from "../assets/image/woman.png"
 import girl from "../assets/image/girl.png"
+import {  Link } from "react-router-dom";
 
 const LoanService = () => {
   return (
@@ -74,7 +75,9 @@ const LoanService = () => {
 
     {/* Apply Button */}
     <div className="text-center mt-8">
+      <Link to="/get-started">
       <button className="bg-[#3BB3C3] hover:bg-cyan-600 text-white px-20 py-4 rounded-md shadow-lg item-center  justify-center">Apply for Loan Now</button>
+      </Link>
     </div>
   </div>
   )

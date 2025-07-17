@@ -5,7 +5,7 @@ import {  Link } from "react-router-dom";
 const Hero = () => {
   return (
     <main className="min-h-screen  flex items-center justify-center p-4 md:p-8 z-0">
-        <div className="absolute top-0 right-0 w-40 h-60 bg-gradient-to-br from-sky-500 to-sky-300 opacity-30 rounded-full blur-2xl pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-40 h-60 bg-gradient-to-br from-sky-500 to-sky-300 opacity-30 z-50 rounded-full blur-2xl pointer-events-none"></div>
     <div className="max-w-6xl w-full flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-50">
       {/* Left side - Circular image */}
       <div className="relative w-full md:w-1/2 aspect-square md:aspect-auto">

@@ -80,8 +80,8 @@ const App = () => {
       </Layout>
     
     </BrowserRouter>
-    <ApplicTwo/>
-    <ApplicThre/>
+    {/* <ApplicTwo/>
+    <ApplicThre/> */}
     </>
   )
 }

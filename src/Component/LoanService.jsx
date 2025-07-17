@@ -7,7 +7,7 @@ import {  Link } from "react-router-dom";
 
 const LoanService = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8 mt-60 items-center overflow-hidden justify-center">
+    <section id='loans' className="max-w-4xl mx-auto px-4 py-8 mt-60 items-center overflow-hidden justify-center">
     <h1 className="text-2xl font-bold text-center text-cyan-500 mb-8">LOAN SERVICES</h1>
 
     {/* Personal Loans */}
@@ -79,7 +79,7 @@ const LoanService = () => {
       <button className="bg-[#3BB3C3] hover:bg-cyan-600 text-white px-20 py-4 rounded-md shadow-lg item-center  justify-center">Apply for Loan Now</button>
       </Link>
     </div>
-  </div>
+  </section>
   )
 }
 

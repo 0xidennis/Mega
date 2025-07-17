@@ -2,15 +2,28 @@ import React from 'react'
 import { useState } from "react";
 import { FaAngleRight } from "react-icons/fa";
 import logo from "../assets/logo/LOGO.png"
-import {  Menu, X } from "lucide-react"
-import {  Link } from "react-router-dom";
+import { Menu, X } from "lucide-react"
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [active, setActive] = useState("Home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  return (
+  // Function to handle navigation click
+  const handleNavClick = (item) => {
+    setActive(item);
+    setIsMenuOpen(false);
     
+    // If already on home page, scroll to section
+    if (window.location.pathname === "/") {
+      const element = document.getElementById(item.toLowerCase());
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
+  return (
     <header className="relative w-full bg-white overflow-x-hidden">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
@@ -21,26 +34,26 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-6 lg:mr-12 lg:border-b-2 lg:border-b-[#3BB3C3]">
           {["Home", "Loans", "About"].map((item) => (
-            <Link
+            <a
               key={item}
-              to={item === "Home" ? "/"  : `/${item.toLowerCase()}`}
-              onClick={() => setActive(item)}
+              href={item === "Home" ? "#home" : `/#${item.toLowerCase()}`}
+              onClick={() => handleNavClick(item)}
               className={`relative px-3 py-2 text-lg font-medium transition-colors ${
-                active === item ? "bg-[#EBEBEB] rounded-lg  text-[#3BB3C3]" : "text-[#3BB3C3]"
+                active === item ? "bg-[#EBEBEB] rounded-lg text-[#3BB3C3]" : "text-[#3BB3C3]"
               }`}
             >
               {item}
               {active === item && (
                 <span className="absolute left-0 bottom-0 w-full h-[2px] bg-teal-500"></span>
               )}
-            </Link>
+            </a>
           ))}
 
           <Link
             to="/get-started"
             className="flex items-center gap-2 px-4 py-2 text-white bg-[#3BB3C3] rounded-lg shadow hover:bg-teal-600"
           >
-            Get Started <FaAngleRight className="bg-white text-[#3BB3C3] rounded-full " />
+            Get Started <FaAngleRight className="bg-white text-[#3BB3C3] rounded-full" />
           </Link>
         </nav>
 
@@ -62,11 +75,8 @@ const Header = () => {
           {["Home", "Loans", "About"].map((item) => (
             <Link
               key={item}
-              to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-              onClick={() => {
-                setActive(item);
-                setIsMenuOpen(false);
-              }}
+              to={item === "Home" ? "/" : `/#${item.toLowerCase()}`}
+              onClick={() => handleNavClick(item)}
               className="text-2xl text-[#3BB3C3] font-medium"
             >
               {item}
@@ -80,9 +90,8 @@ const Header = () => {
           </Link>
         </div>
       )}
-
     </header>
   )
 }
 
-export default Header
+export default Header;

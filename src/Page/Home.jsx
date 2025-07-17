@@ -10,12 +10,12 @@ import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <div>
-        {/* <Header/> */}
+        
         <Hero/>
         <CreditCardCarousel/>
-        <LoanService/>
-        <About/>
-        {/* <Footer/> */}
+        {/* <LoanService/>
+        <About/> */}
+        
     </div>
   )
 }
